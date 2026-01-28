@@ -3,15 +3,14 @@ import DownloadButtons from "./DownloadButtons";
 import { Brain, Sparkles, Wand2, Zap, Lightbulb, Bot, MessageSquare, Stars } from "lucide-react";
 
 const orbitingIcons = [
-  { icon: Brain, delay: 0, ring: 1 },
-  { icon: Sparkles, delay: 2.5, ring: 1 },
-  { icon: Wand2, delay: 5, ring: 1 },
-  { icon: Zap, delay: 7.5, ring: 1 },
-  { icon: Lightbulb, delay: 0, ring: 2 },
-  { icon: Bot, delay: 3.3, ring: 2 },
-  { icon: MessageSquare, delay: 6.6, ring: 2 },
-  { icon: Stars, delay: 0, ring: 3 },
-  { icon: Sparkles, delay: 5, ring: 3 },
+  { icon: Brain, delay: 0 },
+  { icon: Sparkles, delay: 3 },
+  { icon: Wand2, delay: 6 },
+  { icon: Zap, delay: 9 },
+  { icon: Lightbulb, delay: 12 },
+  { icon: Bot, delay: 15 },
+  { icon: MessageSquare, delay: 18 },
+  { icon: Stars, delay: 21 },
 ];
 
 const HeroSection = () => {
@@ -31,11 +30,12 @@ const HeroSection = () => {
             />
           ))}
 
-          {/* Orbiting AI Icons */}
+          {/* Orbiting AI Icons on outermost circle */}
           {orbitingIcons.map((item, index) => {
             const Icon = item.icon;
-            const radius = item.ring === 1 ? 140 : item.ring === 2 ? 220 : 300;
-            const duration = item.ring === 1 ? 20 : item.ring === 2 ? 30 : 40;
+            // Outermost circle: scale(1.2) on 800px container = 400 * 1.2 = 480px radius
+            const radius = 480;
+            const duration = 24; // seconds for full orbit
             
             return (
               <div
@@ -56,8 +56,8 @@ const HeroSection = () => {
                 >
                   <div className="animate-float-icon" style={{ animationDelay: `${index * 0.3}s` }}>
                     <Icon 
-                      className="text-muted-foreground/30 hover:text-muted-foreground/60 transition-colors" 
-                      size={item.ring === 1 ? 20 : item.ring === 2 ? 24 : 28} 
+                      className="text-muted-foreground/40" 
+                      size={22} 
                     />
                   </div>
                 </div>
