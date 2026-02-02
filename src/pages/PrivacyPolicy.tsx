@@ -6,7 +6,7 @@ const PrivacyPolicy = () => {
       <Header />
       <main className="container mx-auto px-6 pt-24 pb-16 max-w-4xl">
         <h1 className="text-4xl font-bold text-foreground mb-4">Privacy Policy for PromptKit</h1>
-        
+
         <p className="text-lg text-muted-foreground mb-8">
           At <strong className="text-foreground">PromptKit</strong> we value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and safeguard your data when you use our mobile application (the "App").
         </p>
@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
           {/* Section 1 */}
           <section className="space-y-6">
             <h2 className="text-2xl font-semibold text-foreground">1. Information We Collect</h2>
-            
+
             <div className="space-y-4 bg-muted/30 p-6 rounded-xl">
               <h3 className="text-xl font-medium text-foreground">A. Personal Information</h3>
               <p className="text-muted-foreground">
@@ -68,7 +68,7 @@ const PrivacyPolicy = () => {
             <p className="text-muted-foreground">
               We utilize trusted third-party services to operate our App. These providers have their own privacy policies addressing how they use such information.
             </p>
-            
+
             <div className="space-y-4 bg-muted/30 p-6 rounded-xl">
               <h3 className="text-xl font-medium text-foreground">Google Firebase</h3>
               <p className="text-muted-foreground">We use Firebase for:</p>
@@ -76,9 +76,9 @@ const PrivacyPolicy = () => {
                 <li><strong className="text-foreground">Authentication:</strong> To securely manage user sign-ins.</li>
                 <li><strong className="text-foreground">Realtime Database:</strong> To store user settings and usage counters.</li>
               </ul>
-              <a 
-                href="https://firebase.google.com/support/privacy" 
-                target="_blank" 
+              <a
+                href="https://firebase.google.com/support/privacy"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
               >
@@ -125,14 +125,31 @@ const PrivacyPolicy = () => {
 
           {/* Section 7 */}
           <section className="space-y-4">
-            <h2 className="text-2xl font-semibold text-foreground">7. Contact Us</h2>
+            <h2 className="text-2xl font-semibold text-foreground">7. Account & Data Deletion</h2>
+            <p className="text-muted-foreground">
+              You have the right to request the deletion of your account and all associated data. To verify your identity and process your request, please contact us via email. We will process your deletion request within 30 days of receipt.
+            </p>
+            <p>
+              <strong className="text-foreground">Request Deletion: </strong>
+              <a
+                href="mailto:syedrabeet2002@gmail.com?subject=Account Deletion Request"
+                className="text-primary hover:underline"
+              >
+                syedrabeet2002@gmail.com
+              </a>
+            </p>
+          </section>
+
+          {/* Section 8 */}
+          <section className="space-y-4">
+            <h2 className="text-2xl font-semibold text-foreground">8. Contact Us</h2>
             <p className="text-muted-foreground">
               If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:
             </p>
             <p>
               <strong className="text-foreground">Email: </strong>
-              <a 
-                href="mailto:syedrabeet2002@gmail.com" 
+              <a
+                href="mailto:syedrabeet2002@gmail.com"
                 className="text-primary hover:underline"
               >
                 syedrabeet2002@gmail.com
